@@ -2,6 +2,8 @@
 Hai semuanya 👏, Semoga dalam keadaan sehat dan masih samangat kodingnya.
 Open source kali ini saya membuat realtime chat pusher yang sangat sederhana proses pembuatannya. Maka jangan ragu untuk menggunakannya.
 
+[![Latest Stable Version](https://poser.pugx.org/febrihidayan/laravel-realtime-chat-pusher/v)](//packagist.org/packages/febrihidayan/laravel-realtime-chat-pusher) [![Total Downloads](https://poser.pugx.org/febrihidayan/laravel-realtime-chat-pusher/downloads)](//packagist.org/packages/febrihidayan/laravel-realtime-chat-pusher) [![Latest Unstable Version](https://poser.pugx.org/febrihidayan/laravel-realtime-chat-pusher/v/unstable)](//packagist.org/packages/febrihidayan/laravel-realtime-chat-pusher) [![License](https://poser.pugx.org/febrihidayan/laravel-realtime-chat-pusher/license)](//packagist.org/packages/febrihidayan/laravel-realtime-chat-pusher)
+
 ## Installasi
 Cara install cukup mudah, jalankan perintah composer dibawah ini.
 ```
