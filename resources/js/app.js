@@ -5,7 +5,7 @@ import Vue from 'vue'
 new Vue({
     el: '#app',
     data: {
-        id: document.getElementById('user_id').value,
+        id: document.querySelector('meta[name="user_id"]').content,
         search: '',
         messages: [],
         users: [],
@@ -13,7 +13,8 @@ new Vue({
             to_id: '',
             content: ''
         },
-        isActive: null
+        isActive: null,
+        notif: 0
     },
     mounted() {
         this.fetchUsers()
@@ -33,6 +34,7 @@ new Vue({
                 this.messages = data
                 this.isActive = this.users.findIndex((s) => s.id === id)
                 this.users[this.isActive].count = 0
+                this.notif--
             })
         },
         sendMessage() {
@@ -108,6 +110,14 @@ new Vue({
         search: _.debounce( function() {
             this.fetchUsers()
         }, 500),
+        users: _.debounce( function() {
+            this.notif = 0
+            this.users.filter(e => {
+                if (e.count) {
+                    this.notif++
+                }
+            })
+        }),
         messages: _.debounce( function() {
             this.scrollToEnd()
         }, 10),

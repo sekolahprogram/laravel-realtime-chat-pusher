@@ -8,7 +8,6 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-4">
-                    <input type="hidden" id="user_id" value="{{ auth()->user()->id }}">
                     <div class="form-group">
                         <input v-model="search" type="search" class="form-control" placeholder="Cari user">
                     </div>

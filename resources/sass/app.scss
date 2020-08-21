@@ -41,3 +41,31 @@
 .rounded-circle {
     width: 48px;
 }
+
+.svg-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.svg-icon path{
+  fill: #4691f6;
+}
+
+[badge]:after {
+    background: hsl(171, 100%, 41%);
+    border-radius: 10px;
+    color: #fff;
+    content: attr(badge);
+    font-size: 11px;
+    margin-top: -5px;
+    margin-left: -8px;
+    min-width: 20px;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+}
+[badge^="-"]:after,
+[badge="0"]:after,
+[badge=""]:after {
+   display: none;
+}
